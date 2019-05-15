@@ -6,9 +6,9 @@ class Battle < Sinatra::Base
   end
 
   post '/names' do
-    @player_1 = params[:player_1]
-    @player_2 = params[:player_2]
-    @title = "#{@player_1} vs. #{@player_2}"
+    @player_1_name = params[:player_1_name]
+    @player_2_name = params[:player_2_name]
+    @title = "#{@player_1_name} vs. #{@player_2_name}"
     erb(:play)
   end
 end
