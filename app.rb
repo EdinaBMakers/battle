@@ -20,4 +20,10 @@ class Battle < Sinatra::Base
     @title = "#{@player_1_name} vs. #{@player_2_name}"
     erb(:play)
   end
+
+  get '/attack_result' do
+    @player_1_name = session[:player_1_name]
+    @player_2_name = session[:player_2_name]
+    erb(:attack_result)
+  end
 end
