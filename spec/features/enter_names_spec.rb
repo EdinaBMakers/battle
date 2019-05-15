@@ -5,6 +5,6 @@ feature 'Name entry' do
     fill_in 'player_2_name', with: 'Bob'
     click_button 'Submit'
 
-    expect(page).to be_has_content('Alice vs. Bob')
+    expect(page).to have_content('Alice vs. Bob')
   end
 end
