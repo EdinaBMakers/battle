@@ -3,6 +3,6 @@ feature 'Attack' do
     sign_in_and_play
     click_button 'Attack'
 
-    expect(page).to have_content('Alice attacked Bob')
+    expect(page).to have_content('Alice attacked Bob. Bob: 50HP')
   end
 end
