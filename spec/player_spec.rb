@@ -16,13 +16,6 @@ describe Player do
     end
   end
 
-  describe '#attack' do
-    it 'damages the attacked player' do
-      expect(bob).to receive(:receive_damage)
-      alice.attack(bob)
-    end
-  end
-
   describe '#receive_damage' do
     it "reduces the player's hit points" do
       expect { bob.receive_damage }.to change { bob.hit_points }.by(-10)
