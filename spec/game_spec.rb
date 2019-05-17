@@ -17,6 +17,12 @@ describe Game do
     end
   end
 
+  describe '#current_turn' do
+    it 'starts as player 1' do
+      expect(subject.current_turn).to eq player_1
+    end
+  end
+
   describe '#attack' do
     it 'damages the attacked player' do
       expect(player_2).to receive(:receive_damage)

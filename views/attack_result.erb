@@ -1,1 +1,3 @@
-<%= $game.player_1.name %> attacked <%= $game.player_2.name %>. <%= $game.player_2.name %>: <%= $game.player_2.hit_points %>HP
+<%= $game.current_turn.name %> attacked <%= $game.opponent.name %>. <br>
+<%= $game.opponent.name %>: <%= $game.opponent.hit_points %>HP<br>
+<a href="/play">Next turn</a>
